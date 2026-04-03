@@ -1,0 +1,64 @@
+.sloading-page {
+  min-height: 100vh;
+  background: var(--bg-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 중앙 영역 */
+
+.loading-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 원형 로딩 */
+
+.spinner {
+  width: 120px;
+  height: 120px;
+
+  border-radius: 50%;
+
+  border: 10px solid var(--border);
+  border-top: 10px solid var(--primary);
+
+  animation: spin 1s linear infinite;
+
+  margin-bottom: 30px;
+}
+
+/* 회전 애니메이션 */
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 텍스트 */
+
+.loading-text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--text-main);
+}
+
+.progress-text {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.progress-text {
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: .6; }
+  50% { opacity: 1; }
+  100% { opacity: .6; }
+}

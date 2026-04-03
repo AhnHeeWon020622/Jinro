@@ -1,0 +1,334 @@
+/* ===============================
+   COUNSELING LAYOUT
+================================ */
+
+.c-counseling-container{
+
+  display:flex;
+
+  padding:40px 0;   /* 좌우 padding 제거 */
+
+  max-width:1400px;
+
+  margin:0 auto;
+
+}
+
+.main-content{
+
+  width:100%;
+
+}
+
+/* ===============================
+   TITLE
+================================ */
+
+.title-row{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:20px;
+
+  margin-bottom:30px;
+
+}
+
+
+.student-title{
+
+  font-size:28px;
+  font-weight:800;
+  color:var(--text-main);
+
+}
+
+/* ===============================
+   RECORD CONTROL
+================================ */
+
+.record-control{
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+}
+
+.record-box{
+
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  padding:12px 10px;
+
+  border:1px solid var(--border);
+  border-radius:12px;
+
+  background:var(--bg-card);
+
+}
+
+.rec-text{
+
+  font-weight:700;
+  font-size:14px;
+
+}
+
+.rec-dot{
+
+  color:red;
+  margin-left:4px;
+
+  animation:blink 1s infinite;
+
+}
+
+/* ===============================
+   INPUT GROUP
+================================ */
+
+.input-group{
+
+  margin-bottom:25px;
+
+}
+
+.title-input{
+
+  width:100%;
+  padding:14px 20px;
+
+  border:2px solid var(--border);
+  border-radius:15px;
+
+  font-size:18px;
+
+  background:var(--bg-card);
+
+}
+
+.title-input:focus{
+
+  border-color:var(--primary);
+  outline:none;
+
+}
+
+/* ===============================
+   TEXTAREA
+================================ */
+
+.content-textarea{
+
+  width:100%;
+  height:520px;
+
+  padding:25px;
+
+  border:2px solid var(--border);
+  border-radius:20px;
+
+  font-size:16px;
+  line-height:1.6;
+
+  resize:none;
+
+  background:var(--bg-card);
+
+}
+
+.content-textarea:focus{
+
+  border-color:var(--primary);
+  outline:none;
+
+}
+
+/* ===============================
+   SUBMIT
+================================ */
+
+.form-footer{
+
+  display:flex;
+  justify-content:flex-end;
+  margin-top:20px;
+
+}
+
+.btn-submit{
+
+  background:var(--primary);
+
+  border:none;
+
+  padding:12px 45px;
+
+  border-radius:12px;
+
+  font-size:20px;
+  font-weight:800;
+
+  cursor:pointer;
+
+  color:#fff;
+
+}
+
+/* ===============================
+   RECORD BUTTON
+================================ */
+
+.btn-record{
+
+  background:var(--accent);
+
+  border:1px solid var(--border);
+
+  padding:8px 18px;
+
+  border-radius:10px;
+
+  font-size:16px;
+  font-weight:700;
+
+  cursor:pointer;
+
+}
+
+.btn-record.small{
+
+  padding:6px 10px;
+  font-size:14px;
+
+}
+
+.btn-record:hover{
+
+  transform:translateY(-1px);
+
+}
+
+.record-timer{
+
+  font-weight:700;
+
+  font-size:14px;
+
+  margin-left:6px;
+
+  color:var(--text-main);
+
+}
+
+.report-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.left-btn-area {
+    display: flex;
+}
+
+.right-btn-area {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-action-sub,
+.btn-action-main {
+    border: 1px solid var(--primary);
+    padding: 16px 20px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.btn-action-sub {
+    background: var(--bg-card);
+    color: var(--primary);
+}
+
+.btn-action-main {
+    background: var(--primary);
+    color: white;
+}
+
+/* ===============================
+   FOOTER (BUTTONS)
+================================ */
+
+.form-footer {
+  display: flex;
+  justify-content: space-between; /* 좌우 끝으로 배치 */
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.left-btn-area, .right-btn-area {
+  display: flex;
+  gap: 15px;
+}
+
+/* 뒤로가기 버튼 (보조 버튼 스타일) */
+.btn-back {
+  background: #fff;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  
+  padding: 12px 35px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-back:hover {
+  background: var(--primary);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* 작성 완료 버튼 (기존 btn-submit 유지 및 수정) */
+.btn-submit {
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  color: #fff;
+
+  padding: 12px 45px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-submit:hover {
+  background: var(--primary-hover); /* 변수가 없다면 살짝 어두운 색상 */
+  transform: translateY(-2px);
+}
+
+/* ===============================
+   ANIMATION
+================================ */
+
+@keyframes blink{
+
+  50%{
+    opacity:0;
+  }
+
+}

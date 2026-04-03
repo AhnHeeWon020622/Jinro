@@ -1,0 +1,206 @@
+/* ===============================
+   AGREEMENT PAGE
+================================ */
+
+/* 전체 배경 */
+.agreement-page {
+
+  min-height: 100vh;
+
+  background: var(--bg-main);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+/* 중앙 박스 */
+.agreement-container {
+
+  width: 760px;
+
+  background: var(--bg-card);
+
+  padding: 50px 50px;
+
+  border-radius: 18px;
+
+  border: 1px solid var(--border);
+
+  box-shadow: var(--shadow);
+}
+
+/* 이전으로 */
+.back-btn {
+
+  font-size: 14px;
+
+  color: var(--text-sub);
+
+  cursor: pointer;
+
+  margin-bottom: 24px;
+}
+
+.back-btn:hover {
+
+  color: var(--primary);
+}
+
+/* 제목 */
+.title {
+
+  text-align: center;
+
+  font-size: 30px;
+
+  font-weight: 700;
+
+  margin-bottom: 10px;
+
+  color: var(--text-main);
+}
+
+/* 부제목 */
+.subtitle {
+
+  text-align: center;
+
+  color: var(--text-sub);
+
+  margin-bottom: 36px;
+
+  font-size: 15px;
+}
+
+/* ===============================
+   AGREE CARD
+================================ */
+
+.agree-card {
+
+  border: 1px solid var(--border);
+
+  border-radius: 12px;
+
+  padding: 22px 24px;
+
+  margin-bottom: 18px;
+
+  background: var(--accent);
+}
+
+.agree-card h4 {
+
+  margin-bottom: 10px;
+
+  font-weight: 700;
+
+  font-size: 16px;
+
+  color: var(--text-main);
+}
+
+.agree-card p {
+
+  font-size: 14px;
+
+  color: var(--text-sub);
+
+  line-height: 1.6;
+}
+
+/* 체크박스 */
+
+.checkbox-row {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 14px;
+
+  font-size: 14px;
+
+  color: var(--text-main);
+}
+
+/* ===============================
+   WARNING
+================================ */
+
+.warning-box {
+
+  background: #fff8e6;
+
+  border: 1px solid var(--accent);
+
+  padding: 14px;
+
+  border-radius: 10px;
+
+  font-size: 13px;
+
+  color: #92400e;
+
+  margin-top: 20px;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+
+.button-area {
+
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 30px;
+}
+
+.start-btn {
+
+  width: 260px;
+
+  padding: 16px;
+
+  border-radius: 12px;
+
+  font-size: 16px;
+
+  border: none;
+
+  font-weight: 600;
+}
+
+/* disabled */
+
+.start-btn.disabled {
+
+  background: var(--border);
+
+  color: var(--text-sub);
+}
+
+/* active */
+
+.start-btn.active {
+
+  background: var(--primary);
+
+  color: #fff;
+
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+.start-btn.active:hover {
+
+  background: var(--primary-hover);
+}

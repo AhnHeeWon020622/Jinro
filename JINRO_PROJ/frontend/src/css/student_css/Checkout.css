@@ -1,0 +1,187 @@
+.cart-page {
+  min-height: 100vh;
+  background: var(--bg-main);
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.cart-container {
+  width: 95%;
+  max-width: 900px;
+
+  background: var(--bg-card);
+
+  border: 1px solid var(--border);
+
+  border-radius: 16px;
+
+  padding: 50px 40px 100px 40px;
+
+  margin-bottom: 80px;
+
+  position: relative;
+
+  box-shadow: var(--shadow);
+}
+
+/* 상단 */
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.cart-header h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.total-count {
+  font-size: 14px;
+  color: var(--text-sub);
+}
+
+.total-count span {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* 영상 리스트 */
+
+.video-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* 카드 */
+
+.video-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background: var(--accent);
+
+  border: 1px solid var(--border);
+
+  padding: 22px;
+
+  border-radius: 16px;
+
+}
+
+
+/* 순서 */
+
+.video-order {
+  width: 32px;
+  height: 32px;
+
+  background: var(--primary);
+
+  color: #fff;
+
+  font-size: 14px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 썸네일 */
+
+.video-thumb img {
+  width: 140px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* 정보 */
+
+.video-info {
+  flex: 1;
+}
+
+.category-tag {
+  display: inline-block;
+
+  background: var(--primary);
+
+  color: #fff;
+
+  font-size: 12px;
+
+  padding: 5px 12px;
+
+  border-radius: 20px;
+
+  margin-bottom: 6px;
+}
+
+.video-info h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 6px 0;
+  color: var(--text-main);
+}
+
+.video-info p {
+  font-size: 13px;
+  color: var(--text-sub);
+}
+
+/* 하단 버튼 */
+
+.cart-bottom {
+  position: absolute;
+
+  bottom: 30px;
+
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.cart-btn {
+  width: 160px;
+
+  padding: 10px 0;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  border: none;
+
+  transition: .2s;
+}
+
+/* 보조 버튼 */
+
+.cart-btn.secondary {
+  background: var(--border);
+  color: var(--text-main);
+}
+
+/* 메인 버튼 */
+
+.cart-btn.primary {
+  background: var(--primary);
+  color: #fff;
+}

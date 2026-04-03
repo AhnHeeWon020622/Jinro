@@ -1,0 +1,293 @@
+/* ===============================
+   CATEGORY ADD PAGE
+================================ */
+
+.category-add-container {
+
+  padding: 50px 80px;
+
+  width: 100%;
+}
+
+.category-add-container h2 {
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  margin-bottom: 40px;
+
+  color: var(--primary);
+}
+
+/* ===============================
+   FORM ROW
+================================ */
+
+.form-row {
+
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 30px;
+
+  gap: 20px;
+}
+
+.form-row label {
+
+  width: 100px;
+
+  font-weight: 600;
+
+  color: var(--text-main);
+}
+
+/* ===============================
+   INPUT
+================================ */
+
+.wide-input {
+
+  width: 650px;
+
+  height: 45px;
+
+  border-radius: 8px;
+
+  border: 1px solid var(--border);
+
+  padding: 0 15px;
+
+  background: var(--bg-card);
+
+  transition: .2s;
+}
+
+.wide-input:focus {
+
+  outline: none;
+
+  border: 1px solid var(--primary);
+
+  box-shadow: 0 0 0 2px rgba(217,119,87,0.15);
+}
+
+/* ===============================
+   QUESTION AREA
+================================ */
+
+.question-scroll-area {
+
+  margin-top: 30px;
+}
+
+.question-block {
+
+  border: 1px solid var(--border);
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  margin-bottom: 30px;
+
+  background: var(--bg-card);
+
+  transition: .2s;
+}
+
+.question-block:hover {
+
+  border-color: var(--primary);
+
+  box-shadow: none;
+}
+
+.question-header {
+
+  font-weight: 600;
+
+  margin-bottom: 15px;
+
+  color: var(--primary);
+}
+
+/* ===============================
+   TEXTAREA
+================================ */
+
+.question-block textarea {
+
+  width: 100%;
+
+  height: 80px;
+
+  margin-bottom: 20px;
+
+  border-radius: 8px;
+
+  border: 1px solid var(--border);
+
+  padding: 10px;
+
+  resize: none;
+
+  transition: .2s;
+}
+
+.question-block textarea:focus {
+
+  outline: none;
+
+  border: 1px solid var(--primary);
+
+  box-shadow: 0 0 0 2px rgba(217,119,87,0.15);
+}
+
+/* ===============================
+   OPTION GRID
+================================ */
+
+.option-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px 30px;
+}
+
+.option-item label {
+
+  display: block;
+
+  font-weight: 600;
+
+  margin-bottom: 5px;
+
+  color: var(--text-main);
+}
+
+.option-item input {
+
+  width: 100%;
+
+  height: 38px;
+
+  border-radius: 6px;
+
+  border: 1px solid var(--border);
+
+  padding: 0 10px;
+
+  background: var(--bg-card);
+
+  transition: .2s;
+}
+
+.option-item input:focus {
+
+  outline: none;
+
+  border: 1px solid var(--primary);
+
+  box-shadow: 0 0 0 2px rgba(217,119,87,0.15);
+}
+
+/* ===============================
+   ADD QUESTION BUTTON
+================================ */
+
+.add-question-btn {
+
+  margin-top: 20px;
+
+  display: flex;
+
+  justify-content: flex-end;
+}
+
+.add-question-btn button {
+
+  height: 42px;
+
+  padding: 0 22px;
+
+  border-radius: 8px;
+
+  border: none;
+
+  background: var(--accent);
+
+  color: #fff;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+.add-question-btn button:hover {
+
+  background: var(--primary);
+}
+
+/* ===============================
+   BOTTOM BUTTON
+================================ */
+
+.bottom-buttons {
+
+  margin-top: 50px;
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 20px;
+}
+
+.bottom-buttons button {
+
+  width: 110px;
+
+  height: 42px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* CANCEL */
+
+.bottom-buttons button:first-child {
+
+  border: 1px solid var(--border);
+
+  background: var(--bg-card);
+
+  color: var(--text-main);
+}
+
+/* SAVE */
+
+.save-btn {
+
+  background: var(--primary);
+
+  color: #fff;
+
+  border: none;
+
+  transition: .2s;
+}
+
+.save-btn:hover {
+
+  background: var(--primary-hover);
+}
