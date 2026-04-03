@@ -1,0 +1,93 @@
+.selectedItem {
+
+  display: flex;
+
+  align-items: center;
+
+  background: var(--bg-card);
+
+  border: 1px solid var(--border);
+
+  border-radius: 8px;
+
+  padding: 12px;
+
+  gap: 12px;
+
+  position: relative;
+
+  max-width: 300px;
+
+  transition: all 0.2s ease;
+}
+
+.selectedItem:hover {
+  background: var(--accent);
+}
+
+/* 썸네일 */
+
+.thumbnail {
+
+  width: 50px;
+
+  height: 50px;
+
+  background: #000;
+
+  border-radius: 6px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+/* 텍스트 */
+
+.itemInfo h4 {
+
+  font-size: 13px;
+
+  margin: 0;
+
+  color: var(--text-main);
+}
+
+.itemInfo p {
+
+  font-size: 11px;
+
+  color: var(--text-sub);
+
+  margin: 2px 0 0 0;
+}
+
+/* 삭제 버튼 */
+
+.deleteBtn {
+
+  position: absolute;
+
+  right: 12px;
+
+  color: var(--error);
+
+  background: none;
+
+  border: none;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.deleteBtn:hover {
+
+  color: #dc2626;
+
+  transform: scale(1.1);
+}

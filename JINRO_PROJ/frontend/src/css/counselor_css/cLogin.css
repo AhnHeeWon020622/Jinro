@@ -1,0 +1,185 @@
+/* ===============================
+   COUNSELOR LOGIN
+================================ */
+
+.c-login-wrap {
+  position: fixed;
+  inset: 0;
+
+  display: grid;
+  place-items: center;
+
+  padding: 24px;
+
+  background: var(--bg-main);
+
+  box-sizing: border-box;
+}
+
+/* ===============================
+   FORM
+================================ */
+
+.c-login-form {
+
+  width: min(420px, 100%);
+  margin: 0;
+
+  background: var(--bg-card);
+
+  padding: 50px 40px;
+
+  border-radius: 16px;
+
+  box-shadow: var(--shadow);
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+
+  border: 1px solid var(--border);
+}
+
+/* ===============================
+   TITLE
+================================ */
+
+.c-login-form h2 {
+  margin: 0;
+  margin-bottom: 12px;
+
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 26px;
+
+  color: var(--text-main);
+}
+
+.c-login-form p {
+
+  margin-bottom: 35px;
+
+  text-align: center;
+
+  color: var(--text-sub);
+
+  font-size: 15px;
+}
+
+/* ===============================
+   LABEL
+================================ */
+
+.c-login-form label {
+
+  font-size: 15px;
+
+  margin-bottom: 8px;
+
+  font-weight: bold;
+
+  color: var(--text-main);
+
+  text-align: left;
+}
+
+/* ===============================
+   INPUT
+================================ */
+
+.c-login-form input {
+
+  height: 48px;
+
+  padding: 0 15px;
+
+  border-radius: 10px;
+
+  border: 1px solid var(--border);
+
+  margin-bottom: 20px;
+
+  font-size: 15px;
+
+  transition: all 0.25s ease;
+
+  background: var(--bg-card);
+}
+
+.c-login-form input:focus {
+
+  border-color: var(--primary);
+
+  outline: none;
+
+  box-shadow: 0 0 0 3px rgba(217,119,87,0.2);
+}
+
+/* ===============================
+   ERROR
+================================ */
+
+.c-id-label,
+.c-pw-label {
+
+  color: #e74c3c;
+
+  font-size: 13px;
+
+  margin-top: -15px;
+  margin-bottom: 15px;
+
+  font-weight: 500;
+
+  text-align: left;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+
+.c-login-form button {
+
+  height: 52px;
+
+  margin-top: 10px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: var(--primary);
+
+  color: #fff;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.c-login-form button:hover {
+
+  background: var(--primary-hover);
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+  .c-login-form {
+    padding: 40px 25px;
+  }
+
+}

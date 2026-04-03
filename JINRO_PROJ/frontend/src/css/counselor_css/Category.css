@@ -1,0 +1,441 @@
+/* ===============================
+   PAGE
+================================ */
+
+.counselor-category-page {
+
+  padding: 40px;
+
+  width: 100%;
+
+  background: var(--bg-main);
+}
+
+.page-title {
+
+  font-size: 26px;
+
+  font-weight: 700;
+
+  margin-bottom: 30px;
+
+  color: var(--text-main);
+}
+
+/* ===============================
+   CATEGORY GRID
+================================ */
+
+.category-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+
+  gap: 20px;
+}
+
+.category-card {
+
+  background: var(--accent);
+
+  border: 1px solid var(--border);
+
+  border-radius: 12px;
+
+  padding: 30px 10px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-decoration: none;
+
+  transition: all .2s ease;
+
+  min-height: 130px;
+}
+
+.category-card:hover {
+
+  background: var(--bg-card);
+
+  border-color: var(--primary);
+
+  transform: translateY(-3px);
+
+  box-shadow: none;
+}
+
+/* ===============================
+   ICON
+================================ */
+
+.category-icon {
+
+  width: 42px;
+
+  height: 42px;
+
+  color: var(--primary);
+
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   TEXT
+================================ */
+
+.category-text {
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  color: var(--text-main);
+
+  text-align: center;
+
+  line-height: 1.4;
+}
+
+/* ===============================
+   HEADER
+================================ */
+
+.page-header-row {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 20px;
+}
+
+.back-btn {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  border: 1px solid var(--border);
+
+  background: var(--bg-card);
+
+  padding: 8px 12px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.back-btn:hover {
+
+  background: var(--accent);
+}
+
+/* ===============================
+   CATEGORY BUTTON
+================================ */
+
+.category-card-btn {
+
+  width: 100%;
+
+  background: var(--bg-card);
+
+  border: 1px solid var(--border);
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+}
+
+.category-card-btn:hover {
+
+  border-color: var(--primary);
+
+  background: var(--accent);
+
+  transform: translateY(-2px);
+}
+
+/* ===============================
+   MID GRID
+================================ */
+
+.mid-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 30px;
+
+  margin-top: 40px;
+}
+
+.mid-card {
+
+  background: var(--accent);
+
+  border: 1px solid var(--border);
+
+  border-radius: 12px;
+
+  width: 200px;
+
+  min-height: 140px;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-decoration: none;
+
+  color: var(--text-main);
+}
+
+.mid-card:hover {
+
+  background: var(--bg-card);
+
+  border-color: var(--primary);
+
+  transform: translateY(-2px);
+
+  transition: all .2s ease;
+
+  box-shadow: none;
+}
+
+/* ===============================
+   VIDEO GRID
+================================ */
+
+.small-grid {
+
+  flex: 1;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+
+  margin-top: 30px;
+}
+
+.video-card {
+
+  background: var(--bg-card);
+
+  border-radius: 14px;
+
+  border: 1px solid var(--border);
+
+  padding: 20px;
+
+  transition: .2s;
+
+}
+
+
+.card-info h4 {
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  margin-bottom: 8px;
+
+  color: var(--text-main);
+}
+
+.card-info p {
+
+  font-size: 14px;
+
+  color: var(--text-sub);
+}
+
+/* ===============================
+   ADD BUTTON
+================================ */
+
+.add-btn-wrapper {
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  margin-top: auto;
+
+  padding-top :30px;
+}
+
+.add-btn {
+
+  padding: 10px 24px;
+
+  font-size: 14px;
+
+  border-radius: 10px;
+
+  border: none;
+
+  background: var(--primary);
+
+  color: #fff;
+
+  cursor: pointer;
+
+  transition: .2s;
+
+
+}
+
+.add-btn:hover {
+
+  background: var(--primary-hover);
+}
+
+/* ===============================
+   CONTENT BOX
+================================ */
+
+.content-fixed-box {
+
+  background: var(--accent);
+
+  padding: 40px;
+
+  border-radius: 16px;
+
+  min-height: 600px;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+/* ===============================
+   LIST
+================================ */
+
+.list-container {
+
+  margin-top: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.list-item {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 14px 18px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 8px;
+
+  background: var(--bg-card);
+}
+
+.list-left h4 {
+
+  margin: 0 0 4px 0;
+
+  color: var(--text-main);
+}
+
+.list-right button {
+
+  padding: 6px 12px;
+
+  background: var(--primary);
+
+  border: none;
+
+  border-radius: 6px;
+
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.list-right button:hover {
+
+  background: var(--primary-hover);
+}
+
+.category-icon{
+  width:42px;
+  height:42px;
+
+  color: var(--primary);
+
+  transition: 0.2s;
+}
+
+.category-card:hover .category-icon{
+  color: var(--primary-hover);
+  transform: scale(1.1);
+}
+
+
+.guide-btn {
+
+  position: fixed;
+
+  right: 40px;
+  bottom: 40px;
+
+  z-index: 8000;
+
+  background: var(--primary);
+  color: #fff;
+
+  border: none;
+  border-radius: 50px;
+
+  padding: 14px 22px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.25);
+
+  transition: all .2s ease;
+}
+
+.guide-btn:hover {
+  transform: translateY(-2px);
+  background: var(--primary-hover);
+}

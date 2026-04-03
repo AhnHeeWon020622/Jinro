@@ -1,0 +1,141 @@
+/* ===============================
+   DETAIL PAGE
+================================ */
+
+.detail-page {
+
+  display: flex;
+
+  justify-content: center;
+
+  padding: 60px 20px;
+
+  background: var(--bg-main);
+}
+
+.detail-box {
+
+  width: 900px;
+
+  background: var(--bg-card);
+
+  border-radius: 12px;
+
+  padding: 50px;
+
+  border: 1px solid var(--border);
+
+  box-shadow: var(--shadow);
+}
+
+.detail-title {
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  margin-bottom: 30px;
+
+  color: var(--text-main);
+}
+
+.detail-box p {
+
+  font-size: 18px;
+
+  margin-bottom: 20px;
+
+  color: var(--text-main);
+}
+
+.detail-box a {
+
+  color: var(--primary);
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.detail-box a:hover {
+
+  color: var(--primary-hover);
+
+  text-decoration: underline;
+}
+
+/* ===============================
+   RATING
+================================ */
+
+.rating-group {
+
+  display: flex;
+
+  gap: 35px;
+
+  margin-top: 25px;
+}
+
+.rating-btn {
+
+  background: none;
+
+  border: none;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  color: var(--text-sub);
+
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+.rating-btn.active {
+
+  color: var(--primary);
+
+  border-bottom: 2px solid var(--primary);
+}
+
+/* ===============================
+   BOTTOM BUTTON
+================================ */
+
+.detail-btn-wrapper {
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 15px;
+
+  margin-top: 60px;
+}
+
+.detail-btn-wrapper button {
+
+  padding: 8px 28px;
+
+  border-radius: 8px;
+
+  border: 1px solid var(--border);
+
+  background: var(--bg-card);
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  color: var(--text-main);
+}
+
+.detail-btn-wrapper button:hover {
+
+  background: var(--accent);
+
+  border-color: var(--primary);
+}

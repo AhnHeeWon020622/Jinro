@@ -1,0 +1,62 @@
+# ========================
+# Env / Python
+# ========================
+.env
+venv/
+__pycache__/
+.venv
+model/
+venv310
+# ========================
+# Project specific
+# ========================
+activate_proj.bat
+ERD/
+jupyter_kclass.bat
+activate_ai.bat
+# ========================
+# Logs
+# ========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ========================
+# Node / Build
+# ========================
+**/node_modules/
+dist/
+dist-ssr/
+*.local
+**/package-lock.json
+
+# ========================
+# Editor directories and files
+# ========================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+videos
+test_video
+data
+audio_records
+temp_audio
+audio_uploads
+
+
+# AI model
+*.pth
+*.pt
+*.h5
+*.ckpt
+test_video

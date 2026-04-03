@@ -1,0 +1,167 @@
+/* ===============================
+   GLOBAL ONBOARD DIM
+================================ */
+.global-dim{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.42);
+  z-index:9990;
+}
+
+
+/* ===============================
+   GLOBAL SPOTLIGHT
+================================ */
+.global-spot{
+  position:fixed;
+  border-radius:18px;
+  z-index:9991;
+  pointer-events:none;
+
+  background:rgba(255,255,255,.14);
+  backdrop-filter:brightness(1.22) saturate(1.08);
+
+  box-shadow:
+    0 0 0 9999px rgba(0,0,0,.42),
+    0 0 0 4px #21FFD0,
+    0 0 120px rgba(33,255,208,.95),
+    0 0 200px rgba(33,255,208,.55);
+
+  transition:
+    top .42s cubic-bezier(.22,.61,.36,1),
+    left .42s cubic-bezier(.22,.61,.36,1),
+    width .42s cubic-bezier(.22,.61,.36,1),
+    height .42s cubic-bezier(.22,.61,.36,1);
+}
+
+
+/* ===============================
+   GLOBAL GUIDE
+================================ */
+.global-guide{
+  position:fixed;
+  width:min(420px, calc(100vw - 32px));
+  max-height:none;
+  overflow:visible;
+  z-index:9992;
+  color:white;
+  text-align:center;
+  box-sizing:border-box;
+  padding:0 18px 88px;
+
+  animation: onboardFade .35s ease;
+  transition:
+    top .32s cubic-bezier(.22,.61,.36,1),
+    left .32s cubic-bezier(.22,.61,.36,1),
+    right .32s cubic-bezier(.22,.61,.36,1);
+}
+
+.global-guide::after{
+  content:"";
+  position:absolute;
+  right:-18px;
+  bottom:-16px;
+  width:150px;
+  height:150px;
+  background:url("../../../assets/logo/onboarding.png") center / contain no-repeat;
+  pointer-events:none;
+  animation:onboardMascotFloat 2.6s ease-in-out infinite;
+}
+
+
+/* ===============================
+   TITLE
+================================ */
+.global-guide h3{
+  font-size:42px;
+  font-weight:900;
+  margin-bottom:16px;
+  text-shadow:0 12px 40px rgba(0,0,0,.85);
+}
+
+
+/* ===============================
+   DESC
+================================ */
+.global-guide p{
+  font-size:20px;
+  line-height:1.8;
+  margin-bottom:28px;
+  text-shadow:0 10px 30px rgba(0,0,0,.85);
+  white-space:pre-line;
+}
+
+
+/* ===============================
+   BUTTON
+================================ */
+.global-guide button{
+  border:none;
+  cursor:pointer;
+  height:58px;
+  padding:0 36px;
+  border-radius:18px;
+
+  background:var(--primary);
+  color:white;
+  font-size:18px;
+  font-weight:800;
+
+  box-shadow:0 20px 50px rgba(0,0,0,.35);
+  transition:.28s;
+}
+
+.global-guide button:hover{
+  transform:translateY(-4px);
+  background:var(--primary-hover);
+}
+
+.global-guide button:disabled{
+  opacity:.78;
+  cursor:default;
+  transform:none;
+}
+
+
+/* ===============================
+   FADE
+================================ */
+@keyframes onboardFade{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@keyframes onboardMascotFloat{
+  0%{ transform:translateY(0); }
+  50%{ transform:translateY(-8px); }
+  100%{ transform:translateY(0); }
+}
+
+
+/* ===============================
+   BODY LOCK
+================================ */
+.onboarding-lock{
+  overflow:hidden;
+  height:100vh;
+  touch-action:none;
+}
+
+@media (max-width: 768px){
+  .global-guide{
+    padding:0 10px 68px;
+  }
+
+  .global-guide::after{
+    right:-8px;
+    bottom:-10px;
+    width:104px;
+    height:104px;
+  }
+}

@@ -1,0 +1,314 @@
+/* =============================== */
+/* PAGE */
+/* =============================== */
+
+.container {
+  padding: 40px;
+  width: 100%;
+  background: var(--bg-main);
+  text-align: center;
+  font-family: 'Pretendard', sans-serif;
+}
+
+/* =============================== */
+/* TITLE */
+/* =============================== */
+
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--text-sub);
+  margin-bottom: 25px;
+}
+
+/* =============================== */
+/* PROGRESS */
+/* =============================== */
+
+.progressBadge {
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 16px;
+
+  border-radius: 20px;
+
+  background: var(--bg-card);
+
+  border: 1px solid var(--border);
+
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 25px;
+
+  box-shadow: var(--shadow);
+}
+
+/* =============================== */
+/* HEADER */
+/* =============================== */
+
+.headerRow {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 30px;
+}
+
+.categoryTitle {
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  color: var(--text-main);
+}
+
+/* =============================== */
+/* BACK BUTTON */
+/* =============================== */
+
+.backButton {
+
+  padding: 8px 16px;
+
+  border-radius: 8px;
+
+  border: 1px solid var(--border);
+
+  background: var(--bg-card);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  color: var(--text-main);
+
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+.backButton:hover {
+
+  background: var(--accent);
+
+  transform: translateY(-1px);
+}
+
+/* =============================== */
+/* CATEGORY GRID */
+/* =============================== */
+
+.cardGrid {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+
+  margin-bottom: 40px;
+  
+}
+
+.card {
+
+  background: var(--bg-card);
+
+  border: 1px solid var(--border);
+
+  border-radius: 10px;
+
+  padding: 20px;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: .2s;
+
+  padding: 30px;
+}
+
+.card:hover {
+
+  background: var(--accent);
+
+  border-color: var(--primary);
+
+  transform: translateY(-2px);
+}
+
+/* 선택된 카드 */
+
+.activeCard {
+
+  border: 2px solid var(--primary);
+
+  background: var(--accent);
+
+  font-weight: 600;
+}
+
+/* =============================== */
+/* SELECTED VIDEO */
+/* =============================== */
+
+.selectedListContainer {
+
+  margin-top: 40px;
+
+  padding: 24px;
+
+  background: var(--bg-card);
+
+  border-radius: 16px;
+
+  border: 1px solid var(--border);
+
+  box-shadow: var(--shadow);
+
+  max-width: 900px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.listTitle {
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  margin-bottom: 18px;
+
+  color: var(--text-main);
+}
+
+.listWrapper {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+/* =============================== */
+/* VIDEO CARD */
+/* =============================== */
+
+.videoCard {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 14px;
+
+  border-radius: 10px;
+
+  background: var(--accent);
+
+  border: 1px solid var(--border);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  color: var(--text-main);
+
+  transition: .2s;
+}
+
+.videoCard:hover {
+
+  background: var(--bg-card);
+
+  border-color: var(--primary);
+}
+
+/* =============================== */
+/* DELETE BUTTON */
+/* =============================== */
+
+.deleteButton {
+
+  border: none;
+
+  background: #ef4444;
+
+  color: white;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  padding: 4px 8px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+.deleteButton:hover {
+
+  background: #dc2626;
+}
+
+.bottomActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;   /* ⭐ 버튼 간격 */
+  margin-top: 40px;
+}
+
+/* 뒤로가기 */
+.backBottomBtn {
+  width: 160px;
+  padding: 12px 0;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  cursor: pointer;
+}
+
+/* hover 제거 */
+.backBottomBtn:hover {
+  background: var(--bg-card);
+}
+
+/* 다음 버튼 (기존 next-button 대신 module로 통일 추천) */
+.nextBtn {
+  width: 200px;
+  padding: 12px 0;
+  border-radius: 8px;
+  border: none;
+  background: #9ca3af;
+  color: #fff;
+}
+
+/* 활성화 */
+.active {
+  background: var(--primary);
+}
